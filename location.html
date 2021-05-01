@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./new-style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Location</title>
+    <style>
+        section div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .logo{
+        margin-bottom: 17px;
+        z-index: 4;
+        height: 22px;
+        position: relative;
+        left: -62vw;
+        top: -8px;
+        margin-left: -2px;
+    }
+    section div img{
+        top: 25vh;
+        left: 50vw;
+        height: 60vh;
+        width: 27vw;
+        padding-top: 12vh;
+    }
+    ul{
+        font-size: 2rem;
+    }
+
+  
+    </style>
+</head>
+<body>
+    <section>
+        <nav class="inverted">
+             <a href="#" class="logo"><img src="./img_assets/source.gif" alt="img" height="60px" width="90px" class="inverted"></a>
+            <a href="index.html" class="logo"><img src="./img_assets/kisspng-computer-icons-user-profile-clip-art-person-icon-user-person-man-icon-5ab04a2c1dfa10.0741935615215027641228.png" alt="img" height="55px" width="60px" ></a>
+           
+        </nav>
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="location-sec">
+            <img class="location-img" src="./img_assets/kisspng-gps-navigation-device-gps-tracking-unit-vehicle-tr-green-map-red-location-mark-5a82617a638093.5908650315184940744076.png" alt="img" height="70px" width="50px">
+            <ul class="location-text">
+                <li>Am Located in the City of Jos, Nigeria </li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        AOS.init();
+
+       
+    </script>
+      
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./new-style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Okoson Peterson</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    nav{
+        background: linear-gradient(to left,  rgba(255, 255, 255, 2.5), rgba(255, 255, 255,0.6));
+        height: 80px;
+        width: 100%;
+    }
+    label.logo{
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+
+    }
+    nav ul{
+      
+        float: right;
+        margin-right: 20px;
+    }
+    #home nav ul li{
+        display: block;
+        line-height: 20px;
+        padding: 12px;
+        background-color: rgb(29, 189, 218);
+        border: 1px solid black;
+        
+    }
+    nav ul li a{
+        /* color: white; */
+        font-size: 17px;
+        padding: 7px;
+        color: black;
+    }
+   
+    .checkbtn{
+        font-size: 30px;
+        font-weight: 800;
+        color: black;
+        float: right;
+        line-height: 40px;
+        margin-right: 45px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+
+    @media(max-width: 952px){
+        label.logo{
+            font-size: 30px;
+            padding-left: 50px;
+        }
+        nav ul li a{
+            font-size: 16px;
+        }
+    }
+
+    @media(max-width: 864px){
+        .checkbtn{
+            display: block;
+        }
+       #home nav ul{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            width: 100%;
+            height: 50vh;
+            background: rgb(34, 172, 236);
+            top: -100%;
+            left: 0;
+            text-align: center;
+            transition: all .3s;
+            z-index: -1;
+        }
+        #home nav ul li{
+            background-color: #6cdbeb;
+            display: block;
+            margin: 50px 0;
+            line-height: 15px;
+            width: 40%;
+        }
+        #home nav ul li a{
+            font-optical-sizing: 20px;
+            
+        }
+         a:hover {
+            background: none;
+            cursor: pointer;
+            width: 60%;
+            transition: all .3s;
+        }
+        #check:checked ~ ul{
+            /* left: 0; */
+            top: 0;
+
+        }
+    }
+</style>
+<body class="fade-out fade-transition">
+    <main id="home">
+        <nav>
+            <!-- <a href="#" class="logo"><img src="./img_assets/source.gif" alt="img" height="60px" width="90px" class="inverted"></a> -->
+            <a href="#home" class="logo" data-aos="zoom-in-down"><img src="./img_assets/kisspng-computer-icons-user-profile-clip-art-person-icon-user-person-man-icon-5ab04a2c1dfa10.0741935615215027641228.png" alt="img" height="50px" width="60px" ></a>
+               
+            <!-- open and close nav -->
+            <input type="checkbox" id="check">
+       <label for="check" class="checkbtn">
+           <i class="fas fa-bars">&plus;</i>
+       </label>
+
+            <ul class="menu invert">
+                    <li><a href="#about_music">About Me </a></li>
+                    <li><a href="#contact_us">Contact Info</a></li>
+                    <li><a href="#bookings">Bookings</a></li>
+                    
+            </ul>
+            
+        </nav>
+        
+        <section class="main_glass" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+            <img name="slide" src="./img_assets/animated-gifs-corporate-training.gif" alt="img" height="436px" width="340px" class="inverted" data-aos="fade-left">
+            
+            <ul class="three_divs">
+
+                <li class="one dinverte">&times;</li>
+                <li class="two inverted">&minus;</li>
+                <li class="three inverted">&GreaterLess;</li>
+                
+            </ul>
+        </section>
+    </main>
+    <div class="circle1">
+    </div>
+    <div class="circle2"></div>
+    <section class="about_music" id="about_music" class="invert">
+        <h2 class="hh2 inverted" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">Am a Junior Developer</h2>
+        <div class="box_container">
+           <div class="text_box">
+               <strong ><h3 class="inverted" data-aos="fade-down"
+                   data-aos-easing="linear"
+                   data-aos-duration="400" style="text-align: left;">With Knowledge In:</h3></strong>
+               <ul data-aos="fade-right"
+               data-aos-offset="300"
+               data-aos-easing="ease-in-sine">
+                   <li class="inverted">HTML5</li> 
+                   <li class="inverted">CSS3</li> 
+                   <li class="inverted">Basic Vanilla JS</li> 
+               </ul><br>
+               <h3 class="hh3 inverted" data-aos="zoom-out-down">Am also an Animator, i do simple video Animation:<span> <a class="anime" href="./adds.html">Advert animation</a></span></h3>
+               <div class="locate inverted">
+                   <a href="location.html">My Location</a>
+               </div>
+              
+           </div>
+           <div class="music_box" data-aos="flip-left"
+           data-aos-easing="ease-out-cubic"
+           data-aos-duration="2000">
+               <img src="./img_assets/pizza.JPG" alt="img" height="470px" width="530px" class="inverted">
+           </div>
+        </div>
+    </section>
+    <section class="contact" id="contact_us">
+        <div class="heading">
+           <strong>Contact Me</strong>
+           <p>By Leaving a Massage Down Below</p>
+       </div>
+       <div class="circle1 circle11"> </div>
+       <div class="circle2 circle22"></div>
+       <div class="the_form" data-aos="flip-down">
+           <form action="POST" method="POST" data-netlify="true" onsubmit="event.preventDefault();">
+      
+               <div>
+                   <input type="text" name="Fullname" placeholder="Full Name" id="fullname" name="fullname" spellcheck="true" required>
+               </div>
+               <div>
+                   <input type="email" name="email" placeholder="whatever@gmail.com" name="email" spellcheck="true" required>
+               </div>
+               <div>
+                   <textarea name="massage" id="" cols="35" rows="10" placeholder="Write a Masssage" name="text" spellcheck="true" required></textarea>
+               </div>
+               <div class="field">
+                   <div data-netlify-recaptcha="true"></div>
+               </div>
+               <div>
+                   <button type="submit" value="send" name="submit" >Submit</button>
+               </div>
+           </form>
+           <!-- <div id="status" style="padding: 100px; background-color: gray; position:absolute; top: 0; left: 0; display: none;">
+               <p>Gracias, Thanks submission Successful</p>
+           </div> -->
+       </div>
+    </section>
+    <section class="bookings" id="bookings" data-aos="flip-down">
+        <div>
+            <p>For Bookings and Detailed Enquiries</p>
+        </div>
+        <div class="phone_no">
+            <span>Whatsapp Message</span>
+            <a href="http://wa.link/g12aok">+2348172613892</a>
+            <span>Calls</span>
+            <a href="tel:+2348111406441">08111406441</a>
+            <span>Mail me directly</span>
+            <a href="http://peterowojoku@gmail.com">peterowojoku@gmail.com</a>
+        </div>
+        <p>Follow Me On Social.</p>
+        <div class="floating_links">
+           <a href="#">
+               <i class="fab fa-facebook-f"></i>
+           </a>
+           <a href="#">
+               <i class="fab fa-facebook-f"></i>
+           </a>
+       </div>
+    </section>
+    <footer id="footer">
+        <span class="copyright" >&copy;Copyright & Trademark by Okoson-Peterson | All Rights Reserved</span>
+        <div class="footer_social">
+            <a href="https://www.facebook.com/oko.pizzaro">
+                <i class="fab fa-facebook-f">FB</i>
+            </a>
+            <a href="https://twitter.com/Sober_Persona">
+                <i class="fab fa-twitter">Twi</i>
+            </a>
+            <a href="https://www.github.com/Oko-droid">
+                <i class="fab fa-audio mack">Git</i>
+            </a>
+        </div>
+        
+    </footer>
+   
+    
+    <script>
+        document.onkeypress = function (e){
+            e = e || window.event;
+
+            if(e.keyCode === 13){
+                document.documentElement.classList.toggle('dark-mode');
+                document.querySelectorAll('.inverted').forEach((result) => {
+                    result.classList.toggle('invert');
+                })
+            }
+        }
+       
+        const body = document.querySelector('body');
+        const fade = () =>{
+            document.write 
+            setTimeout(() => {
+                body.classList.toggle('fade-out');
+            }, 780);
+        }
+        body.addEventListener('load', fade())
+       
+
+         // the starting point
+         var i = 0;
+        var images = [];
+        var time = 6000;
+        // image list
+        images[0] = 'image1.gif';
+        // images[1] = 'image2.png';
+        images[2] = 'image3.png';
+        images[3] = 'image4.mp4';
+        // images[4] = 'image5.png';
+        // change image
+        function changeimg(){
+            document.slide.src = images[i];
+
+            if(i < images.length - 1){
+                i++;
+
+            } else{
+                i = 0;
+            }
+
+            setTimeout("changeimg()", time);
+        }
+        window.onload = changeimg;
+      
+
+       
+    </script>
+    <script>
+       AOS.init();
+     </script>
+</body>
+</html>
+</html>

@@ -1,0 +1,1159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    text-decoration-line: none;
+    
+}
+.dark-mode{
+    filter: invert(1) hue-rotate(180deg);
+}
+.invert{
+    filter: invert(1) hue-rotate(180deg);
+}
+*::-webkit-scrollbar{
+    width: .7rem;
+}
+*::-webkit-scrollbar-track{
+ -webkit-box-shadow: inset 0 0 6px ;
+}
+*::-webkit-scrollbar-thumb{
+ background-color: rgb(12, 184, 214);
+ border-radius: 25px;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: poppins;
+    
+}
+.fade-out{
+    opacity: 0;
+}
+.fade-transition{
+    transition-property: opacity;
+    transition-duration: 2.3s;
+}
+nav{
+    background-color:  white;
+    background: linear-gradient(to left,  rgba(255, 255, 255, 2.5), rgba(255, 255, 255,0.6));
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 50px;
+    z-index: 9;
+    
+}
+nav .logo{
+    font-size: 1.7rem;
+}
+
+/* open and close */
+nav ul{
+    float: right;
+    /* margin-right: -30px; */
+}
+#home nav ul li{
+    display: inline-block;
+    line-height: 2px;
+    /* margin: 0 5px; */
+    
+    
+}
+nav ul li a{
+    width: 60%;
+    color: black;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+nav .checkbtn .fas{
+    background-color: #6cdbeb;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+}
+#check{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    /* margin-left: 40px; */
+}
+#home .menu li{
+    margin: 7px;
+    padding: 5px;
+    padding-left: 5px;
+    border: 1px solid  black;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    
+}
+#home .menu li:hover{
+    background: #6cbdeb;
+    transition:  ease-in 0.4s;  
+}
+
+/* .menu li a:hover{
+    color: white;
+} */
+.logo{
+    margin-bottom: 17px;
+    z-index: 4;
+    height: 50px;
+    position: relative;
+    left: -9vw;
+    top: 4px;
+}
+
+#home .menu li a{
+    height: 92px;
+    width: 20px;
+    color: black;
+    padding: 10px;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to left top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_glass{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:80px;
+    background-color: white;
+    height: 75vh;
+    width: 60%;
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255,0.3));
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(2.4rem);
+}
+main .main_glass img{
+    position: absolute;
+    top: 2.7vh;
+    right: 1.7vw;
+    border-radius: 10px;
+    z-index: 2.8;
+    
+}
+.main_glass div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    font-size: 2rem;
+    align-self: center;
+    top: 35vh;
+    left: 25px;
+    line-height: 75px;
+    z-index: 3;
+    
+}
+.main_glass img::after{
+    position: absolute;
+    content: 'Contract and Agreements are based on trust, if you trust me to deliver i definately will';
+    top: 20vh;
+    align-self: center;
+    left: 2vw;
+    font-size: 1.3rem;
+    
+}
+.main_glass .three_divs {
+    
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    left: 1px;
+    
+    width: 30vw;  
+    z-index: 3;
+    
+}
+ 
+.main_glass .three_divs li{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-align: center;
+    top: 10px;
+    left: 0vw;
+    margin-left: -17vw;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row-reverse;
+    
+    
+}
+.main_glass .three_divs li:nth-child(1){
+    background-color: rgb(243, 3, 3);
+    padding: 3px;
+    border-radius: 50%;
+    color: rgb(243, 3, 3);
+}
+.main_glass .three_divs li:nth-child(2){
+    background-color: rgb(240, 240, 6);
+    padding: 3px;
+    border-radius: 50%;
+    color: rgb(240, 240, 6);
+}
+.main_glass .three_divs li:nth-child(3){
+    background-color: rgb(7, 107, 7);
+    padding: 3px;
+    border-radius: 50%;
+    color:  rgb(7, 107, 7);
+}
+.main_glass .three_divs li:nth-child(1):hover{
+    color: black;
+    transition:  ease-in 0.1ms;
+    font-weight: 900;
+    font-weight: bold;
+}
+.main_glass .three_divs li:nth-child(2):hover{
+    color: black;
+    transition:  ease-in 0.1ms;
+    font-weight: 900;
+    font-weight: bold;
+}
+.main_glass .three_divs li:nth-child(3):hover{
+    color: black;
+    transition:  ease-in 0.1ms;
+    font-weight: 900;
+    font-weight: bold;
+}
+.circle1, .circle2{
+    background: white;
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, -1));
+    height: 18rem;
+    width: 18rem;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0.8;
+}
+.main_glass div img{
+    height: 80px;
+    width: auto;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.445);
+}
+.circle1{
+    bottom: 5%;
+    right: 10%;
+    z-index: 0;
+    background-color: rgba(211, 198, 198, 0.877);
+}
+.circle2{
+    top: 2%;
+    left: 12%; 
+    z-index: 0;
+    
+}
+.about_music{
+    height: 100vh;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    
+}
+.about_music h2{
+    font-family: monospace;
+    position: relative;
+    font-size: 2.2rem;
+    bottom: 150px;
+    left: 46vw;
+    text-align: right;
+    display: inline-block;
+    z-index: 3;
+    /* width: 40%; */
+}
+.about_music .box_container{
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.about_music .box_container .text_box strong{
+    font-size: 1.7rem;
+}
+.about_music .text_box .speaker{
+    position: absolute;
+    top: 145%;
+    right: 11px;
+    z-index: 0;
+}
+.box_container .text_box{
+    display: flex;
+    margin-left: -16px;
+    display: block;
+    z-index: 3;
+    text-align: left;
+}
+.box_container .text_box h2, h3{
+    font-size: 1.3rem;
+    
+}
+.box_container .text_box .hh3{
+    font-size: 1.1rem;
+}
+.box_container .text_box ul li{
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    
+}
+.about_music h2{
+    /* background-color: black; */
+    position: relative;
+    top: -30vh;
+    right: 12vw;
+    padding: 30px;
+    width: 60%;
+}
+.box_container .text_box strong{
+    margin-top: 12vh;
+    padding: 12px;
+    
+}
+.box_container .text_box h2, p{
+    margin-bottom: 42px;
+    font-size: 1.2rem;
+    font-family: cursive;
+    padding: 15px;
+    line-height: 5px;
+    
+}
+.box_container .text_box .my_songs{
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.box_container .music_box{
+    padding-top: 22px;
+    margin-left: -38vw;
+
+}
+
+.anime:hover{
+    color: crimson;
+}
+.box_container .music_box img{
+    position: relative;
+    /* left: -100px; */
+    border-radius: 30%;
+     object-fit: contain;
+     float: left;
+     border-bottom-left-radius: 10%;
+     border-bottom-right-radius: 10%;
+     border-top-right-radius: 0;
+     border-top-left-radius: 0;
+     margin-right: 10vw;
+     /* background-color: aqua; */
+}
+
+/* contact info */
+.contact{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    border-top: 1px solid gray;
+    padding-top: 30px;
+    border-bottom: 1px solid gray;
+    margin-left: 5px auto;
+    padding-bottom: 40px;
+}
+.contact .heading{
+    font-family: fantasy;
+    width: 60%;
+    padding-top: 1vh;
+    padding-bottom: 15px;
+    z-index: 3;
+    
+}
+.contact .heading strong{
+    font-size: 2.2rem;
+    font-weight: 200;
+    
+}
+.heading p{
+    padding-top: 5vh;
+    font-size: 1.4rem;
+    text-align: center;
+    
+}
+.contact .circle11, .circle22{
+    z-index: -1;
+    
+}
+/* the form */
+.the_form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: -21px;
+    backdrop-filter: blur(2.5rem);
+    
+}
+.the_form form input{
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 45vw;
+    height: 7vh;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 1.2rem;
+    margin: 12px;
+    z-index: 3;
+    
+}
+.the_form form ::placeholder{
+    font-size: 1.1rem;
+}
+.the_form form textarea{
+    border-radius: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    z-index: 4;
+    width: 45vw;
+    
+}
+
+.the_form form div:last-child button{
+    padding: 10px 0;
+    width: 30vw;
+    background: rgb(24, 23, 23);
+    color: white;
+    z-index: 5;
+    border-radius: 15px;
+
+}
+/* booking */
+.bookings{
+    font-family: monospace;
+    background: linear-gradient(to right,  rgba(255, 255, 255, 2), rgba(49, 171, 201, 0.404));
+    padding-top: 40px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.2rem;
+    font-size: 1.3rem;
+}
+.bookings p{
+    font-size: 1rem;
+}
+.bookings p{
+    font-size: 1rem;
+}
+.bookings .phone_no{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+.bookings .phone_no a{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -22px;
+    /* display: block; */
+    font-size: 1.3rem;
+    
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,  rgba(255, 255, 255, 2), rgba(49, 171, 201, 0.404));
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 1px solid rgb(207, 201, 201);
+    color:black;
+}
+footer span{
+    font-size: 1.2rem;
+}
+.footer_social{
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_social a{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(27, 26, 26);
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+footer .footer_social img{
+    position: absolute;
+}
+.footer_social a:hover{
+    background-color: #6cbdeb;
+    transition: all ease 0.5s;
+}
+::selection{
+    color: goldenrod;
+    background-color: chocolate;
+}
+.about_music,
+.contact{
+    padding-top: 60px;
+}
+.menu-btn,
+.menu-icon{
+    display: none;
+}
+.menu-icon{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+@media(min-width: 1200px){
+    .main_glass{
+        min-height: 70vh;
+        
+    }
+    .main_glass img{
+        min-height: 65vh;
+        min-width: 40vw;
+    }
+    .the_form form ::placeholder{
+        font-size: 1.2rem;
+    }
+    .box_container .music_box img{
+       min-height: 440px;
+       width: 580px;
+       
+         
+    }
+     /* location media queries */
+    
+    .location-img{
+        
+        height: 50vh;
+        width: 39vw;
+        margin-top: 20vh;
+    }
+    .location-text{
+        padding-top: 25px;
+        font-size: 1.3rem;
+    }
+}
+
+
+@media(max-width: 1000px){
+    nav{
+        justify-content: space-between;
+        height: 65px;
+        max-width: 100%;
+        padding: 35px 25px;
+    }
+    nav .logo{
+        padding-left: 70px;
+    }
+    
+    
+    .main_glass{
+        height: 70vh;
+        width: 55vw;
+    }
+    .main_glass img{
+        height: 65vh;
+        width: 50vw;
+    }
+    .main_glass .three_divs{
+        display: none;
+    }
+    #about_music h2{
+        
+        position: relative;
+        font-size: 2rem;
+        text-align: left;
+    }
+    .box_container{
+        display: flex;
+        flex-direction: column;
+        left: 0;
+    }
+    .box_container .text_box{
+        position: absolute;
+        display: block;
+        flex-flow: column;
+        left: 40px;
+        padding-top: 65px;
+    
+    }
+    .about_music .hh2{
+       position: relative;
+       width: 90%;
+       left: 4vw;
+        font-size: 2.8rem;
+    }
+    .box_container .text_box .hh3{
+        font-size: 1.1rem;
+        padding-top: 50px;
+    }
+    .text_box strong h3{
+        font-size: 1.5rem;
+    }
+    .box_container .music_box img{
+        position: relative;
+       height: 360px;
+       width: 440px;
+       top: -12vh;
+       padding-left: 170px;
+         
+    }
+    .contact .heading strong{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .heading p{
+        font-size: 1.3rem;
+        
+    }
+    .the_form form input{
+        width: 48vw;
+        height: 7vh;
+    }
+    .the_form form ::placeholder{
+        font-size: 1.1rem;
+    }
+    .the_form form textarea{
+        width: 48vw;
+    }
+    .the_form form div:last-child button{
+        width: 25vw;
+    }
+    .bookings p{
+        font-size: 1rem;
+    }
+    .bookings p{
+        font-size: 1rem;
+    }
+    .bookings .phone_no a{
+      font-size: 1.2rem;
+        
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+       
+    }
+    footer .copyright{
+        font-size: 1.08rem;
+    }
+
+     /* location media queries */
+     
+    .location-img{
+        
+        height: 46vh;
+        width: 40vw;
+        margin-top: 20vh;
+    }
+    .location-text{
+        padding-top: 20px;
+        font-size: 1.3rem;
+    }
+}
+@media(min-width:501px) and (max-width: 764px){
+    nav{
+        position: fixed;
+        /* max-height: 2.8vh; */
+        width: 80%;
+        
+    }
+    nav .logo{
+        font-size: 1.8rem;
+    }
+    nav .checkbtn .fas{
+        font-size: 2.2rem;
+        padding: 2px;
+    }
+    nav .checkbtn{
+        display: block;
+        color: black;
+    }
+   
+    #home nav ul{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        position: fixed;
+        width: 90%;
+        height: 100vh;
+        background:rgb(12, 184, 214);
+        top: -100%;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    #home nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+    nav ul li a{
+        font-optical-sizing: 20px;
+    }
+    a:hover{
+        background: none;
+        color: aqua;
+    }
+    nav #check:checked ~ ul{
+        /* left: 0; */
+        top: 0;
+
+    }
+    nav .logo img{
+        height: 60px;
+         width: 60px;
+    }
+    .three_divs li{
+        display: none;
+    }
+    #i-btn{
+        position: relative;
+         height: 5.9vh;
+         width: 3.9vw;
+         border-radius: 50%;
+         background-color: black;
+     }
+    .main_glass{
+        height: 69.5vh;
+        width: 60vw;
+    }
+    .main_glass img{
+        top: 0vh;
+        height: 65vh;
+        width: 55.5vw;
+    }
+    .main_glass img::after{
+        font-family: monospace;
+        top: 22vh;
+        left: 0vw;
+        font-size: 1.2rem;
+    }
+    .circle1{
+        height: 35vh;
+        width: 35vw;
+        bottom: 4%;
+        right: 6%;
+        z-index: 0;
+    }
+    .circle2{
+        height: 35vh;
+        width: 35vw;
+        top: 3%;
+        left: 6%; 
+        z-index: 0;
+    }
+    #about_music h2{
+        
+        position: relative;
+        font-size: 2rem;
+        /* left: -10vw; */
+        text-align: left;
+    
+        /* width: 40%; */
+    }
+    .about_music{
+        padding-top: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .about_music .text_box{
+        margin-top: 12px;
+    }
+    .box_container .music_box img{
+        display: none;
+    }
+    .contact .heading strong{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .heading p{
+        font-size: 1.05rem;
+        
+    }
+    .the_form form input{
+        width: 66vw;
+    }
+    .the_form form ::placeholder{
+        font-size: 1.2rem;
+    }
+    .the_form form textarea{
+        width: 66vw;
+    }
+    .the_form form div:last-child button{
+        width: 22vw;
+    }
+    .bookings p{
+        font-size: 1rem;
+    }
+    .bookings p{
+        font-size: 1rem;
+    }
+    .bookings .phone_no{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .bookings .phone_no a{
+      font-size: 1.2rem;
+        
+    }
+    footer{
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+    footer .footer_social{
+        margin-left: 40px;
+    }
+    .footer_social a:hover{
+        background-color: #6cbdeb;
+        width: 40px;
+        height: 40px;
+    }
+     /* location media queries */
+    
+    .location-img{
+        
+        height: 45vh;
+        width: 38vw;
+        margin-top: 20vh;
+    }
+    .location-text{
+        padding-top: 20px;
+        font-size: 1.2rem;
+    }
+    video{
+        height: 200px;
+        width: 400px;
+    }
+}
+
+@media(max-width: 500px){
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        position: fixed;
+        max-height: 1.5vh;
+        width: 100%;
+    }
+    nav #home{
+        left: 0;
+        width: 40px;
+    }
+    nav .logo{
+        font-size: 0.6rem;
+        
+    }
+    nav .logo img{
+        position: absolute;
+        top: 12px;
+        height: 35px;
+         width: 35px;
+    }
+    nav .checkbtn .fas{
+        font-size: 2rem;
+        padding: 2px;
+    }
+    .about_music .hh2{        
+        font-size: 1.8rem;
+        width: 80%;
+         
+     }
+     .text_box strong h3{
+         font-size: 1.5rem;
+     }
+     main{
+        min-height: 95vh;
+        width: 100%;
+    }
+    .main_glass{
+        margin-top: -10px;
+        padding-top: -5px;
+        height: 52vh;
+        width: 78vw;
+        border-radius: 17px;
+    }
+    .main_glass img{
+        position: absolute;
+        height: 49vh;
+        width: 75vw;
+        padding-bottom: 10px;
+    }
+    .main_glass img::after{
+        font-family: monospace;
+        top: 19vh;
+        left: 2.2vw;
+        font-size: 1.2rem;
+    }
+    .circle1{
+        height: 28vh;
+        width: 37vw;
+        bottom: 8%;
+        right: 5%;
+        z-index: 0;
+    }
+    .circle2{
+        height: 30vh;
+        width: 37vw;
+        top: 3%;
+        left: 5%; 
+        z-index: 0;
+    }
+    .box_container .text_box{
+        display: block;
+        position: absolute;
+         left: 30px;
+        
+    }
+    .box_container .text_box ul li{
+        font-size: 0.94rem;
+        padding: 2px;
+        margin-top: 5px;
+        background-color: rgba(17, 211, 211, 0.767);
+        border-radius: 50%;
+        height: 40px;
+        width: 55px;
+        text-align: center;
+    }
+    .box_container .text_box ul li:nth-child(3){
+        height: 40px;
+        width: 120px;
+        border-radius: 40%;
+        background-color: aqua;
+    }
+    .box_container .music_box img{
+        display: none;
+    }
+    .about_music .hh2{        
+        font-size: 1.8rem;
+        width: 97%;
+        left: 0;
+         
+     }
+    .box_container .text_box .hh3{
+        font-size: 0.80rem;
+        font-style: oblique;
+        
+    }
+    .box_container .text_box strong h3{
+        font-size: 1.2rem;
+        text-align: center;
+        
+    }
+    .about_music .hh3{
+        padding-top: -10px;
+    }
+    .heading p{
+        font-size: 0.90rem;
+        width: 122%;
+        margin-left: -25px;
+    }
+    
+    .contact .heading strong{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+    .the_form form input{
+        width: 69vw;
+        height: 5.8vh;
+    }
+    .the_form form ::placeholder{
+        font-size: 1rem;
+    }
+    .the_form form textarea{
+        
+        width: 69vw;
+    }
+    .the_form form div:last-child button{
+        width: 29vw;
+    }
+    .bookings p{
+        font-size: 0.5rem;
+    }
+    .bookings div:nth-child(1) p{
+        font-size: 0.8rem;
+    }
+    .bookings p{
+        font-size: 0.7rem;
+    }
+    .bookings .phone_no{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .bookings .phone_no a{
+        font-size: 0.9rem;
+    }
+    footer{
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(to right,  rgba(255, 255, 255, 2), rgba(7, 86, 105, 0.445));
+    }
+    footer .copyright{
+        font-size: 0.9rem;
+    }
+    footer .footer_social{
+        margin-left: 38px;
+    }
+    footer .footer_social a{
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    .footer_social a:hover{
+        background-color: #6cbdeb;
+        width: 40px;
+        height: 40px;
+    }
+    /* location media queries */
+    
+    .location-img{
+        
+        height: 33vh;
+        width: 36vw;
+        margin-top: 20vh;
+    }
+    .location-text{
+        padding-top: 20px;
+        font-size: 1rem;
+    }
+
+    /* video styling */
+    video{
+        height: 200px;
+        width: 390px;
+    }
+}
+@media(max-width: 330px){
+    nav{
+        position: fixed;
+        max-height: 1.3vh;
+        max-width: 100%;
+    }
+    nav .checkbtn .fas{
+        font-size: 1.8rem;
+        padding: 2px;
+    }
+    nav .logo img{
+        position: relative;
+        height: 50px;
+         width: 50px;
+         left: -35px
+    }
+    .heading p{
+        font-size: 0.81rem;
+        
+        
+    }
+    .about_music{
+        height: 95vh;
+        padding-top: 25px;
+        display: flex;
+        align-items: center;
+    }
+    .about_music .hh2{        
+        font-size: 1.6rem;
+        width: 97%;
+        left: 0;
+         
+     }
+     .box_container .text_box strong h3{
+        font-size: 1.2rem;
+        text-align: center;
+        
+    }
+     .about_music .text_box strong{
+        font-size: 1.6rem;
+     }
+    .about_music .hh3{
+        padding-top: -30px;
+    }
+    .bookings p{
+        font-size: 0.62rem;
+    }
+    .bookings .phone_no a{
+        font-size: 0.77rem;
+    }
+    footer .copyright{
+        font-size: 0.8rem;
+    }
+    video{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+

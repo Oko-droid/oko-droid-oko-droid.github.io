@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./new-style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body{
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+           background-image: linear-gradient(to right, rgb(150, 150, 150), rgb(22, 129, 161));
+        }
+       .video-div{
+           position: relative;
+           top: 10vh;
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+           margin: 15px 0;
+       }
+       .video-div video{
+           padding: 6px 6px;
+       }
+       footer{
+           position: relative;
+           top: 45vh;
+        background: rgb(31, 30, 30);
+        color: white;
+    }
+       footer .footer_social a{
+            background-color: white;
+            color: rgb(27, 26, 26);
+        }
+       }
+    </style>
+    <title>ad-video</title>
+</head>
+<body class="inverted fade-out fade-transition">
+    <a href="./index.html"></a>
+    <div class="video-div">
+        <video controls height="250vh" width="370vw">
+            <source src="./img_assets/Presentation14.mp4" type="video/mp4"> 
+        </video>
+        <video controls height="250vh" width="370vw">
+            <source src="./K1HLGLIJZ3A6KP2B.mp4" type="video/mp4"> 
+        </video>
+        
+    </div>
+
+    <footer id="footer">
+        <span class="copyright" >&copy;Copyright & Trademark by Okoson-Peterson | All Rights Reserved</span>
+        <div class="footer_social">
+            <a href="https://www.facebook.com/oko.pizzaro">
+                <i class="fab fa-facebook-f">FB</i>
+            </a>
+            <a href="https://twitter.com/Sober_Persona">
+                <i class="fab fa-twitter">Twi</i>
+            </a>
+            <a href="https://www.github.com/Oko-droid">
+                <i class="fab fa-audio mack">Git</i>
+            </a>
+        </div>
+        
+    </footer>
+   <script>
+        const body = document.querySelector('body');
+         const fade = () =>{
+             setTimeout(() => {
+                 body.classList.toggle('fade-out');
+             }, 950);
+         }
+         body.addEventListener('load', fade())
+   </script>
+</body>
+</html>
